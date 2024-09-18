@@ -7,11 +7,11 @@
   </head>
   <body>
     <h1>Halaman Route Dashboard</h1>
-{{$n=1;}}
-@foreach ($users as $user)
-<h3>ini data ke{{$n++}}</h3>
-<p>{{ $user->name }}</p>
-<p>{{ $user->email }}</p>
+    {{$n=1;}}
+      @foreach ($users as $user)
+      <h3>ini data ke{{$n++}}</h3>
+        <p>{{ $user->name }}</p>
+        <p>{{ $user->email }}</p>
     
 @endforeach
 {{-- IF USING PHP NATIVE NOT BLADE
